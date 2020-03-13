@@ -1,0 +1,29 @@
+class student:
+    
+    def __init__(self,a='xyx',b=0,c=0):
+        self.name=a
+        self.rollno=b
+        self.marks=c
+  
+    def grade(self):
+        if(self.marks>90):
+            print("Grade = A")
+        else:
+            print("Grade = B")
+        
+    def printValues(self):
+        print("roll no =",self.rollno)
+        print("name =",self.name)
+        
+print("enter name")
+a=input()
+print("enter rollno")
+b=int(input())
+print("enter marks")
+c=int(input())       
+s1=student()
+s1.printValues()
+s1.grade()
+s2=student(a,b,c)
+s2.printValues()
+s2.grade()
